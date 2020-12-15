@@ -4,6 +4,7 @@ import Footer from "./Components/Footer";
 import Home from "./Components/Views/Home";
 import AboutUs from "./Components/Views/AboutUs";
 import Products from "./Components/Views/Products";
+import Product from "./Components/Views/Product";
 
 function App() {
     return (
@@ -15,11 +16,14 @@ function App() {
                         <Route exact path="/">
                             <Home />
                         </Route>
-                        <Route exact path="/products">
+                        <Route path="/products">
                             <AboutUs />
                         </Route>
-                        <Route exact path="/about-us">
+                        <Route path="/about-us">
                             <Products />
+                        </Route>
+                        <Route path="/product">
+                            <Product />
                         </Route>
                     </Switch>
                 </div>
