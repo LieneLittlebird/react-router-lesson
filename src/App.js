@@ -6,7 +6,7 @@ import AboutUs from "./Components/Views/AboutUs";
 import Products from "./Components/Views/Products";
 import Product from "./Components/Views/Product";
 
-function App() {
+const App = () => {
     return (
         <div>
             <Router>
@@ -16,10 +16,10 @@ function App() {
                         <Route exact path="/">
                             <Home />
                         </Route>
-                        <Route path="/products">
+                        <Route path="/about-us">
                             <AboutUs />
                         </Route>
-                        <Route path="/about-us">
+                        <Route path="/products">
                             <Products />
                         </Route>
                         <Route path="/product">
@@ -31,6 +31,6 @@ function App() {
             </Router>
         </div>
     );
-}
+};
 
 export default App;
